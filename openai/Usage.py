@@ -16,6 +16,9 @@ chat_completion = client.chat.completions.create(
         }
     ],
     model ="gpt-3.5-turbo",
+  
+    # json format
+    response_format={"type":"json_object"}
 )
 print(chat_completion.choices[0].message)
 
